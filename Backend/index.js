@@ -6,12 +6,14 @@ const isConnected = require("./init/database")
 const cors = require('cors')
 app.use(cors())
 
+const port = process.env.PORT || 3000 
+
 app.get('/ping',(req,res)=>{
     res.send("hello express!")
 })
 
-app.listen(3000,()=>{
-    console.log("server running in port 3000")
+app.listen(port,()=>{
+    console.log(`server running in port ${port}`)
 })
 
 app.use(express.json())
