@@ -12,7 +12,7 @@ function Listings() {
 
   const fetchData = async () => {
     axios
-      .get("http://localhost:3000/api")
+      .get("https://worst-rated-movies-webapp.vercel.app/api")
       .then((res) => {
         console.log(res);
         setdata(res.data.data);
@@ -28,7 +28,7 @@ function Listings() {
 //for deleting the element 
     const handleDelete = (_id) => {
       axios
-        .delete(`http://localhost:3000/api/delete/${_id}`)
+        .delete(`https://worst-rated-movies-webapp.vercel.app/api/delete/${_id}`)
         .then((res) => console.log(res))
         .catch((err) => console.error(err));
       console.log("successful", _id);

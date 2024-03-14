@@ -29,4 +29,4 @@
 
 ### [**FRONTEND DEPLOYED LINK**](https://worstratedmovies.vercel.app/)
 
-### [**BACKEND API LINK**](https://worstratedmovies.onrender.com/)
+### [**BACKEND API LINK**](https://worst-rated-movies-webapp.vercel.app/)

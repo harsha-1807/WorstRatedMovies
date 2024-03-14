@@ -35,7 +35,7 @@ function signup() {
     if (handleValidation()) {
       try {
         const response = await axios.post(
-          "http://localhost:3000/api/signup",
+          "https://worst-rated-movies-webapp.vercel.app/api/signup",
           {
             fullname: newUser.fullname,
             username: newUser.username,

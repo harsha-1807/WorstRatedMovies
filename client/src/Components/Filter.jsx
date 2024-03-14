@@ -15,7 +15,7 @@ function Filter() {
 
     const fetchData = async () => {
         try {
-            const res = await axios.get("http://localhost:3000/api/");
+            const res = await axios.get("https://worst-rated-movies-webapp.vercel.app/api/");
             setData(res.data.data);
             setFilteredData(res.data.data);
         } catch (err) {
@@ -25,7 +25,7 @@ function Filter() {
 
     const fetchUser = async () => {
         try {
-            const res = await axios.get("http://localhost:3000/api/user");
+            const res = await axios.get("https://worst-rated-movies-webapp.vercel.app/api/user");
             setUser(res.data.data);
         } catch (err) {
             console.log(err);

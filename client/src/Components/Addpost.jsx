@@ -21,7 +21,7 @@ function Addpost() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/create",
+        "https://worst-rated-movies-webapp.vercel.app/api/create",
         newPost
       );
       console.log(response.data);

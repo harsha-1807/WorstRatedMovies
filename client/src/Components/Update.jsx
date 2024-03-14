@@ -23,7 +23,7 @@ function Update() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.put(`http://localhost:3000/api/update/${id}`, newPost);
+      const response = await axios.put(`https://worst-rated-movies-webapp.vercel.app/api/update/${id}`, newPost);
       console.log(response.data);
       navigate('/listings');
     } catch (error) {
@@ -34,7 +34,7 @@ function Update() {
   
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/api/${id}`)
+      .get(`https://worst-rated-movies-webapp.vercel.app/api/${id}`)
       .then((res) => {
         const postData = res.data.data; // Assuming your response structure has a 'data' property
         setNewPost({
