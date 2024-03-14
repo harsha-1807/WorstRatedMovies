@@ -41,7 +41,7 @@ app.get('/', async (req, res) => {
   // const dbStatus = isConnected ? 'connected' : 'disconnected';
   res.send({
     // database: dbStatus,
-    message : welcome,
+    message : "welcome",
   });
 });
 
